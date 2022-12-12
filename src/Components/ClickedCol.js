@@ -18,4 +18,4 @@ import React, {Component, Fragment} from "react";
                 </Fragment>)
         }
 }
-export default ClickedCol
+export default React.memo(ClickedCol)
