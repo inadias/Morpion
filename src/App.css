@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+.flex-element{
+
+display: flex;
+  width: 80px;
+  height: 80px;
+  background-color: #B0C7BD;
+  border: 1px solid #907F9F;
+  align-items: center;
+  justify-content: center;
+
+}
+.flex-container {
+
+
+}
+
+
+
+
