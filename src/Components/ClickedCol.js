@@ -5,7 +5,9 @@ import React, {Component, Fragment} from "react";
 
         render() {
 
-            const element= (<div onClick={this.props.clickHander}className="flex-element col" >
+            const element= (
+
+                <div onClick={this.props.clickHander}className="flex-element" >
 
                     {this.props.squareValue}
 
