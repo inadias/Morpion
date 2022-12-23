@@ -1,6 +1,6 @@
 import './App.css';
 
-import React, {Component, useEffect, useRef, useState} from "react";
+import React, {useEffect,useState} from "react";
 import Interface from "./Components/Interface";
 import ProgressBarComponent from "./Components/ProgressBar";
 
@@ -16,14 +16,13 @@ function App(){
     const[filled,setFilled]=useState(0)
 
 
-    const showProgressBar= isRunning && <ProgressBarComponent progress={filled}/>
- /*TODO  VERIFIER POURQUOI LA BAR CE CHARDER AVEC LE MONT DIRECTEMENT*/
+    const showProgressBar= isRunning && !show && <ProgressBarComponent progress={filled}/>
+
 
     const showInterface= show && <Interface progress={filled} />
 
     const  clickHandler=()=>
         {
-            console.log('handerler est chargé')
             setIsRunning(true)
             setTimeout(()=>{
 
@@ -31,42 +30,36 @@ function App(){
             },3000)
 
         }
-
-
-
-
     useEffect(()=>{
-        console.log('effect est chargé')
-
-
-        if(filled<100)
+        if(filled<100 && isRunning)
         {
-
             setTimeout(()=>{
-
-                setFilled(prev=>prev += 4)
-
-            },150)
+                setFilled(prev=>prev += 2)
+            },50)
         }
+    },[filled,isRunning])
 
-    },[filled,isRunning,show])
 
     const hideGame=()=>{
         setShow(false)
+        setIsRunning(false)
+        setFilled(0)
     }
 
     const style={
-        btnStart:["btn btn-success m-3 justify-content-center"],
-        btnClose:["btn btn-danger m-3 justify-content-center"],
+        btnStart:["btn btn-outline-success m-3 btn-lg "],
+        btnClose:["btn btn-outline-danger m-3 btn-lg"],
     }
 
-    const btnName=!show ? <button className={style.btnStart} onClick={()=>clickHandler()}>{btn.start}</button>:<button className={style.btnClose} onClick={()=>hideGame()}>{btn.close}</button>
+    const btnName=!show ? <div className='d-grid col-4 mx-auto'> <button className={style.btnStart} onClick={()=>clickHandler()}>{btn.start}</button></div>:<div className='d-grid gap-2 col-4 mx-auto'><button className={style.btnClose} onClick={()=>hideGame()}>{btn.close}</button></div>
 
     return (
-        <div >
+        <div>
+            <h2 className="d-grid col-4 mx-auto mt-5" style={{color:'green'}}>Bienvenue au jeu Morpion </h2>
             {showInterface}
             {btnName}
             {showProgressBar}
+
         </div>
 
     );

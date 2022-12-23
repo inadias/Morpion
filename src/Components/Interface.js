@@ -103,9 +103,6 @@ class Interface extends Component{
                                 {this.renderElement(7)}
                                 {this.renderElement(8)}
 
-
-
-
                             </div>
                         </div>
                         <div className="card-footer text-muted">
