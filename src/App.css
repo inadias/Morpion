@@ -40,20 +40,20 @@
  display: flex;
   width: 90px;
   height: 90px;
-  background-color: #6744bd;
+  background-color: rgb(72, 167, 227);
   border: 1px solid #907F9F;
   justify-content: center;
   align-items: center;
 
 }
-.grid-container {
-
+.grid-container
+{
   display: grid;
-  grid-template-columns: 80px 80px 80px;
+  grid-template-columns: 90px 90px 90px;
   justify-content: center;
+    column-gap: 2px;
+    row-gap:2px;
 }
-
-
 
 
 
