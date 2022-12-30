@@ -55,7 +55,7 @@ function App(){
 
     return (
         <div>
-            <h2 className="d-grid col-4 mx-auto mt-5" style={{color:'green'}}>Bienvenue au jeu Morpion </h2>
+            <h2 className="d-grid col-3 mx-auto mt-5 text-center" style={{color:'green'}}>Bienvenue au jeu Morpion </h2>
             {showInterface}
             {btnName}
             {showProgressBar}
