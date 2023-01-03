@@ -16,7 +16,7 @@ const winner=(squares)=> {
     ];
     for (let i = 0; i < lines.length; i++) {
         const [a, b, c] = lines[i];
-        console.log(a)
+
         if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
             return squares[a];
         }
@@ -83,7 +83,7 @@ class Interface extends Component{
 
                     <div className="card text-center">
                         <div className="card-header">
-                            <div className=" container mt-5 whoIsPlaying text-center"> <h2>C'est à vous de jouer : {player}</h2></div>
+                            <div className=" container mt-5 whoIsPlaying text-center"> <h2>C'est à vous de jouer  </h2> <h3>{player}</h3></div>
                         </div>
                         <div className="card-body">
                             <h5 className="card-title"><p>Partie numéro : 1</p></h5>
@@ -103,13 +103,10 @@ class Interface extends Component{
                                 {this.renderElement(7)}
                                 {this.renderElement(8)}
 
-
-
-
                             </div>
                         </div>
                         <div className="card-footer text-muted">
-                            {lionLego} 0 : 0 {aigleLego}
+                            {lionLego} <strong>0</strong>  : <strong>0</strong>  {aigleLego}
                         </div>
                     </div>
 
