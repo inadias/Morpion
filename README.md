@@ -15,17 +15,25 @@ Fonction Interface.js => Ce composant est imbrique la logique du jeu, à savoir 
 <li> intègre des image à la place des "O" et des "X"</li>
 <li> intègre des image à la place des "O" et des "X"</li>
 </ul>
+
+Pour le Css :
+ inline css avec Bootstarp 
+ dans le ficher App.css
+
 Fonction Progressbar.js => Ce composant contient la logique de la barre de progression  qui fait ma transition entre la page d'accueil et le jeu
+Fonction Result.js => Contient  un affichage d'un modal généré par Bootsrap. il s'affiche au moment au un joueur a gagné la partie .
+ 
+ 
+ 
 
-
-## Available Scripts
+## Scripts pour lancer le jeu
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Une fois lancer il faut cliquer sur le lien dans la cli 
+              Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
