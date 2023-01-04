@@ -1,6 +1,6 @@
 
 
-<h1>Project Morpion réalisé  par Reactjs </h1>
+<h1>Project Morpion réalisé avec Reactjs </h1>
 <h3> le principe du jeu est </h3>
 <p>
 L'interface du jeu est  tracer sur une feuille blanche. Une grille de 3 cases sur 3 (selon les variantes, il est possible d'augmenter le nombre de cases). Le but du jeu est d'aligner avant son adversaire 3 symboles identiques horizontalement, verticalement ou en diagonale.
@@ -23,8 +23,9 @@ Pour le Css :
 Fonction Progressbar.js => Ce composant contient la logique de la barre de progression  qui fait ma transition entre la page d'accueil et le jeu
 Fonction Result.js => Contient  un affichage d'un modal généré par Bootsrap. il s'affiche au moment au un joueur a gagné la partie .
  
- 
- 
+ Required:
+  Bootstrap v5 ou autre 
+  si vous utiliser les éditeur IntelliJ, il suffira  de cloner le jeu pour qui install les liberaires nécessaires et qui sont listées dans dan package.json
 
 ## Scripts pour lancer le jeu
 
