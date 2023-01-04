@@ -3,6 +3,7 @@ import './App.css';
 import React, {useEffect,useState} from "react";
 import Interface from "./Components/Interface";
 import ProgressBarComponent from "./Components/ProgressBar";
+import Result from "./Components/Result";
 
 function App(){
     const[show, setShow]=useState(false)
@@ -59,6 +60,7 @@ function App(){
             {showInterface}
             {btnName}
             {showProgressBar}
+
 
         </div>
 
